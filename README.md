@@ -1,14 +1,15 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/V3k9yeN1)
+
 # Travail à faire
 
 ## Créer et exécuter une application
 
 Créer une application qui utilise un `RecyclerView` pour afficher une liste de recettes. Chaque élément de la liste doit indiquer le nom de la recette avec une courte description. Lorsque l'utilisateur appuie sur une recette (un élément de la liste), démarrer une activité (`Activity`) qui affiche le texte complet de la recette.
 
-* Utiliser des éléments et un style `TextView` distincts pour le nom et la description de la recette.
-* Il est ossible d'utiliser un texte d'espace réservé (placeholder) pour les recettes complètes.
-* En option, ajouter une image du plat fini à chaque recette.
-* Cliquer sur le bouton Haut ramène l'utilisateur à la liste des recettes.
+- Utiliser des éléments et un style `TextView` distincts pour le nom et la description de la recette.
+- Il est ossible d'utiliser un texte d'espace réservé (placeholder) pour les recettes complètes.
+- En option, ajouter une image du plat fini à chaque recette.
+- Cliquer sur le bouton Haut ramène l'utilisateur à la liste des recettes.
 
 La capture d'écran ci-dessous montre un exemple d'implémentation simple. L'application peut avoir un aspect très différent, tant qu'elle dispose des fonctionnalités requises.
 
@@ -23,7 +24,7 @@ Laquelle des affirmations suivantes concernant une `RecyclerView` est fausse ? 
 - [ ] Un `RecyclerView` est un moyen plus économe en ressources pour afficher des listes déroulantes.
 - [ ] Il faut fournir une mise en page (layout) pour un seul élément de la liste.
 - [ ] Tous les éléments de la liste se ressemblent.
-- [ ] on a pas besoin d'un gestionnaire de disposition (layout manager) avec un `RecyclerView` pour gérer la hiérarchie et la disposition des éléments `View`.
+- [x] on a pas besoin d'un gestionnaire de disposition (layout manager) avec un `RecyclerView` pour gérer la hiérarchie et la disposition des éléments `View`.
 
 ### **Question 2**
 
@@ -31,14 +32,14 @@ Lequel des éléments suivants est le composant principal dont vous avez besoin 
 
 - [ ] `RecyclerView`
 - [ ] `RecyclerView.Adapter`
-- [ ] `RecyclerView.ViewHolder`
+- [x] `RecyclerView.ViewHolder`
 - [ ] `AppCompatActivity`
 
 ### **Question 3**
 
 Quelle interface doit-on implémenter pour écouter et répondre aux clics des utilisateurs dans une `RecyclerView`? Choisissez-en un.
 
-- [ ] `View.onClickListener`
+- [x] `View.onClickListener`
 - [ ] `RecyclerView.Adapter`
 - [ ] `RecyclerView.ViewHolder`
 - [ ] `View.OnKeyListener`
@@ -47,8 +48,8 @@ Quelle interface doit-on implémenter pour écouter et répondre aux clics des u
 
 Vérifier que l'application dispose des fonctionnalités suivantes :
 
-* Implémente un `RecyclerView` qui affiche une liste déroulante de titres de recettes et de courtes descriptions.
-* Le code étend ou implémente `RecyclerView`, `RecyclerView.Adapter`, `RecyclerView.ViewHolder` et `View.OnClickListener`.
-* Cliquer sur un élément de la liste démarre une activité (`Activity`) qui affiche la recette complète.
-* Le fichier `AndroidManifest.xml` définit une relation parent de sorte que cliquer sur le bouton Haut dans une vue de recette revient à la liste des recettes.
-* `ViewHolder` contient une mise en page avec deux éléments `TextView`; par exemple, un `LinearLayout` avec deux éléments `TextView`.
+- Implémente un `RecyclerView` qui affiche une liste déroulante de titres de recettes et de courtes descriptions.
+- Le code étend ou implémente `RecyclerView`, `RecyclerView.Adapter`, `RecyclerView.ViewHolder` et `View.OnClickListener`.
+- Cliquer sur un élément de la liste démarre une activité (`Activity`) qui affiche la recette complète.
+- Le fichier `AndroidManifest.xml` définit une relation parent de sorte que cliquer sur le bouton Haut dans une vue de recette revient à la liste des recettes.
+- `ViewHolder` contient une mise en page avec deux éléments `TextView`; par exemple, un `LinearLayout` avec deux éléments `TextView`.
